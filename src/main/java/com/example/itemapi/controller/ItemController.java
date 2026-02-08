@@ -35,6 +35,12 @@ public class ItemController {
         return itemService.getItemById(id);
     }
 
+    @GetMapping("/")
+    public String home() {
+        return "Backend is running";
+    }
+
+
     @GetMapping("/index")
     public String showWelcomeMessage() {
         return "Gunjan";
